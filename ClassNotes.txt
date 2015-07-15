@@ -18,8 +18,38 @@ the level of ‘SISMID/SISG Module 4: Introduction to R’ will be expected.
 Pre-requisites: knowledge of Module 1, Probability and Statistical Inference.
 Co-listed with the Summer Institute in Statistical Genetics.
 
+Course Website: sismid15m11.bot-tak.org
+
 =========================================================================================
 
 Wed 15 July
 
 Session 1:
+
+Introductions:
+	Alex: http://www.med.nyu.edu/biosketch/aleksa01
+	Joey: https://scholar.google.com/citations?user=nNQ1LtMAAAAJ
+
+	Diverse group!!
+
+	This course covers three forks: Microbiology, Molecular biology/technology, and 
+	Bioinformatics
+
+Lecture 1 - Motivation:
+	Exciting and emerging field -- largely due to high throughput data
+
+Lecture 2 - Generating Data:
+	This course is on downstream processing
+		*my MG rhizosphere data is 454 sequencing of 16S gene
+
+Laboratory 1: Sequence pre-processing w/QIIME
+	Host: ec2-54-157-46-245.compute-1.amazonaws.com
+	Username: student03
+	Password: test123
+	
+	http://qiime.org/tutorials/tutorial.html
+	
+	Open up terminal:
+	ssh student03@ec2-54-157-46-245.compute-1.amazonaws.com
+	
+	
