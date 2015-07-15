@@ -50,6 +50,20 @@ Laboratory 1: Sequence pre-processing w/QIIME
 	http://qiime.org/tutorials/tutorial.html
 	
 	Open up terminal:
-	ssh student03@ec2-54-157-46-245.compute-1.amazonaws.com
+		ssh student03@ec2-54-157-46-245.compute-1.amazonaws.com
 	
-	
+		cd qiime_overview_tutorial/
+		ls
+			Fasting_Example.fna #contains sequences
+			> #deliminator symbol
+			less #open up file for veiwing
+			.qual #is the quality file; -log probabilities of error, higher the number 
+				less probability of an error; e^-37
+			the quality values for 454 is almost useless
+			Fasting_Map.txt #maps the barcode with the descriptions
+				sample id, barcode sequence, primer sequence (generic), 
+				
+			after run look at 
+			then log will tell you the number of sequence per sample
+			
+			
