@@ -113,4 +113,14 @@ Laboratory 4: Filtering, testing, multiple comparison
 
 	Avoid doing more tests than you need because you will have to correct for
 	multiple comparisons
+
+Session 5:
+
+Lecture 6: Mixture models for microbiome data
+
+Laboratory 5: Mixture models for differential abundance testing
+	Non parametric way to deal with this is SAMseq {samr} 
+		(alternative to negative binomial)
+	Neg binomial: if it fits well, it will be very sensitive
+		use diagnostic plots to see if that is a good fit
 	
