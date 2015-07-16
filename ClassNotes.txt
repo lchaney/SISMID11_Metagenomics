@@ -35,10 +35,10 @@ Introductions:
 	This course covers three forks: Microbiology, Molecular biology/technology, and 
 	Bioinformatics
 
-Lecture 1 - Motivation:
+Lecture 1 - Metagenomics in Biology:
 	Exciting and emerging field -- largely due to high throughput data
 
-Lecture 2 - Generating Data:
+Lecture 2 - Sequencing technology and upstream processing:
 	This course is on downstream processing
 		*my MG rhizosphere data is 454 sequencing of 16S gene
 
@@ -66,4 +66,51 @@ Laboratory 1: Sequence pre-processing w/QIIME
 			after run look at 
 			then log will tell you the number of sequence per sample
 			
-			
+Session 2:
+
+Laboratory 1: continued; alternative OTU picking
+	UPARSE - part of usearch of Qiime *recomended	
+	There are denoiser - takes care of homopolymers - specific for 454 data
+		*base by base quality is not very useful for 454
+		*just use illumina now
+	Workflow developed by Joey
+		Trim first
+		filter after trimming
+		Then UPARSE
+
+		*there is an alternative to OTU clustering 
+		
+		This workshop is not on OTU clustering -- we are going to focus on analysis to do
+		after OTU clustering
+
+Lecture 3: Microbiome downstream processing pipeline
+	Markdown -- transition from LaTex and Sweave
+	
+Lab 2: Introduction to phyloseq
+		*see R scripts
+		
+		
+=========================================================================================
+
+Thur 16 July
+
+Session 3:
+
+Lecture 4: Descriptive statistics and normalizations
+	Simpsons, Shannons, etc. Like from ecology
+	Need to normalize based off of unequal sequencing
+	
+Laboratory 3: Quality control, transformations
+	This is an example on different ways to begin your data analysis	
+	.Rdata saves your data in a way that R can pull it up quickly
+		
+
+Session 4:
+
+Lecture 5: Testing and Multiple Testing
+
+Laboratory 4: Filtering, testing, multiple comparison
+
+	Avoid doing more tests than you need because you will have to correct for
+	multiple comparisons
+	
