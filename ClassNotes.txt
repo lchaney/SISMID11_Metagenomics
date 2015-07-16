@@ -117,10 +117,32 @@ Laboratory 4: Filtering, testing, multiple comparison
 Session 5:
 
 Lecture 6: Mixture models for microbiome data
+	do not rarefy
 
 Laboratory 5: Mixture models for differential abundance testing
 	Non parametric way to deal with this is SAMseq {samr} 
 		(alternative to negative binomial)
 	Neg binomial: if it fits well, it will be very sensitive
 		use diagnostic plots to see if that is a good fit
+
+Session 6:
+
+Lecture 7: Ecological distance metrics; Principal Coordinate Analysis
+	What to do with distances and beta diversity
+	Principal component regression
+	MDS and PCA is the same thing
+	
+Laboratory 6: Computing distance matrices; PCoA
+	set seed because you want it to be reproducable
+	principal coordinate analysis - pick the number of axis based off scree plot
+		if you want to include look to the right one, you might want to include that too
+		if it explains the same amount of variation
+	the negative variability is due to non euclidean distances, corrected with cailliez
+		or adding a small constant to all
+	
+	There is a large difference between location (fecal vs cecal)
+	You can't tell a difference between treatment because it is obscured by location
+	do wca to center both locations to focus on differences of treatment
+	 
+	
 	
