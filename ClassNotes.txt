@@ -144,5 +144,86 @@ Laboratory 6: Computing distance matrices; PCoA
 	You can't tell a difference between treatment because it is obscured by location
 	do wca to center both locations to focus on differences of treatment
 	 
+=========================================================================================
+
+Fri 17 July
+
+Session 7:
+
+Lecture 10: Generalized multivariate analysis of variance
+	Now we are going to explore if there is statistical significance between groups
+	It is just like MANOVA but with distances (e.g. Shannon's, JSD, etc) instead of means
+	
+Laboratory 9: ADONIS and permutation testing
+	distance is equivalent to multivariate spread, or variation between groups
+	dist.perm.test(jsd.dist.cecal, cecal.treatment, 999)
+	  #these are the p-values
+	The adonis test might not always be appropriate, for example one group with a lot of
+	varaiation and another group with a small variation - with different centers. You 
+	don't want your groups to have vastly different variances. The same is true with
+	regular anova - you can't compare groups with vastly different variances. There are
+	assumptions that you must hold to.
+	One thing that you could do is just report the differences, there just might not be
+	a statistical test, but who needs a p-value if you can visually describe it
+
+Session 8:
+
+Lecture x: Denoising
+	The End of OTU's = the standard approach [...](OTUs), underexploits the accuracy of 
+	modern sequencing technology.
+	Tikhonov, et al
+	
+	Motivation
+		What is an OTU really?
+			*a lot of this is just PCR and sequencing errors
+			*OTU - is "operational"
+			*OTU useful for high level things
+	DADA
+		De Novo Amplicon Denoising without Training Data or Experimental Design 
+		Requirement (DADA - Rosen et al)
+	
+		Which sequences are real and which have errors?
+		Top down approach - assume the most abundant sequences are real the less are errors
+		One downside of OTU clustering it is highly dependent on input data included
+			your clustering changes as augmented, doesn't scale well, hard to replicate
+		Parallelize computing
+	Rosen et al 2012 Denoising PCR-amplified metagenome data. BMC Bioinformatics
+		Exceptions: Chimeras are not resolved (still need to do chimera detection)
+	https://github.com/joey711/dadac	
+	https://github.com/joey711/dada2
+	
+	shiny-phyloseq
+	
+Laboratory 8: Data and network manipulation with phyloseq
+	error on Chunk 19 and followed up by 20 & 21 
+	This is corrected in the newer version of R/Phyloseq
+	Clear list: rm(list = ls())
+
+	To play around with both R in R studio while running shiny-phyloseq, you can run
+	shiny-phyloseq in terminal
+	R
+
+Session 9:
+
+Lecture 11: Networks
+	use this (not to capture dynamics) to capture correlations
+	dynamics go with Lotka-Volterra
+	not really sure where to go next with these networks
+	Maybe compare networks from different treatments
+	maybe use them to try to make prediction models
 	
 	
+Laboratory 10: Graphical models for microbiome data
+	I have no idea what was going on with this tutorial :(
+
+
+Session 10:
+
+Lecture 8: Machine learning with microbiome data
+	Word of warning about hierarchical clustering: you can cluster anything
+	interesting paper with clustering: http://www.microbiomejournal.com/content/1/1/31
+
+Laboratory 7: Clustering and classification
+	Don't use hierarchical clustering unless you really have to and you know 
+	why you are doing it
+		
